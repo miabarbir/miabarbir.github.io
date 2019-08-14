@@ -1,3 +1,6 @@
 # Hello I'm Mia
 
-## Junior Web Developer
+*Junior Web Developer*
+
+**Text 1**
+**Text 2**
