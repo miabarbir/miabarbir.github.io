@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="adbcb6a1-cea4-4605-9211-216acc5e4909" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/green-white.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/grey-white.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/indigo-white.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/red-white.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/white-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/white-grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/white-indigo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/white-red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/themes/yellow-black.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576110137695</updated>
-      <workItem from="1576110143075" duration="329000" />
+      <workItem from="1576110143075" duration="695000" />
     </task>
     <servers />
   </component>
