@@ -1,4 +1,3 @@
-# Hello I'm Mia
+# .me version 0.0.0.0
 
-*Junior Web Developer*
 
