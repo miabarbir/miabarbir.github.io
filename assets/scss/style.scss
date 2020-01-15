@@ -1,10 +1,25 @@
-$title-font: Arial;
+@font-face {
+    font-family: "TimmonsNY"; 
+    src: url('./assets/fonts/TIMMONSNY.eot'); /* IE9 Compat Modes */
+    src: url('./assets/fonts/TIMMONSNY.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./assets/fonts/TIMMONSNY.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/TIMMONSNY.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./assets/fonts/TIMMONSNY.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/TIMMONSNY.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+} 
+$title-font: 'TimmonsNY', sans-serif;
+$text-font: 'Heebo', sans-serif;
+
 $main-color: rgb(0, 0, 0);
 $secondary-color: rgb(112, 192, 145);
 
 header {
     height:100vh;
     min-height:100vh;
+    .name-title, .function-title {
+        font-family: $title-font;
+    }
 }
 main {
     height:100vh;

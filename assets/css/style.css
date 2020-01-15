@@ -1,6 +1,15 @@
+@font-face {
+  font-family: "TimmonsNY";
+  src: url("./assets/fonts/TIMMONSNY.eot");
+  /* IE9 Compat Modes */
+  src: url("./assets/fonts/TIMMONSNY.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/TIMMONSNY.woff2") format("woff2"), url("./assets/fonts/TIMMONSNY.woff") format("woff"), url("./assets/fonts/TIMMONSNY.ttf") format("truetype"), url("./assets/fonts/TIMMONSNY.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
 header {
   height: 100vh;
   min-height: 100vh; }
+  header .name-title, header .function-title {
+    font-family: "TimmonsNY", sans-serif; }
 
 main {
   height: 100vh;
