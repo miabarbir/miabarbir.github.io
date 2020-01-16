@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/miabarbir/miabarbir.github.io#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "normalize": "^0.3.1",
+    "normalize.css": "^8.0.1"
   }
 }

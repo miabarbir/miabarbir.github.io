@@ -1,31 +1,52 @@
-@font-face {
-    font-family: "TimmonsNY"; 
-    src: url('./assets/fonts/TIMMONSNY.eot'); /* IE9 Compat Modes */
-    src: url('./assets/fonts/TIMMONSNY.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./assets/fonts/TIMMONSNY.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./assets/fonts/TIMMONSNY.woff') format('woff'), /* Pretty Modern Browsers */
-         url('./assets/fonts/TIMMONSNY.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('./assets/fonts/TIMMONSNY.svg#svgFontName') format('svg'); /* Legacy iOS */
-
-} 
-$title-font: 'TimmonsNY', sans-serif;
-$text-font: 'Heebo', sans-serif;
+$title-font: 'Heebo', 'Open Sans', sans-serif;
+$text-font: 'Heebo', 'Open Sans', sans-serif;
 
 $main-color: rgb(0, 0, 0);
-$secondary-color: rgb(112, 192, 145);
+// $secondary-color: rgb(112, 192, 145);
+$secondary-color: blue;
+body {
 
-header {
-    height:100vh;
-    min-height:100vh;
-    .name-title, .function-title {
-        font-family: $title-font;
+    h2 {
+        margin-block-start: none;
+        margin-block-end: none;
     }
 }
-main {
-    height:100vh;
-    min-height:100vh;
+ .full-viewport {
+    height: 100vh;
+    // max-height: 100vh;
+ }
+header {
+    .name-title, .progress-text {
+        font-family: $title-font;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    .name-title {
+        font-size: 33vh;
+        margin: 0;
+        pointer-events: none;
+        z-index: 0;
+    }
+    .progress-container {
+        width: 100%;
+        .progress-text {
+            top: 27vh;
+            position: absolute;
+            z-index: -10;
+            color: #ffff;
+            font-size: 15vh;
+            text-shadow: -1px 0 $secondary-color, 0 1px $secondary-color, 1px 0 $secondary-color, 0 -1px $secondary-color;
+            text-align: center;        
+            margin: 0;
+            
+        }
+    }
+
+      
 }
-footer {
-    height:100vh;
-    min-height:100vh;
-}
+// main {
+
+// }
+// footer {
+
+// }

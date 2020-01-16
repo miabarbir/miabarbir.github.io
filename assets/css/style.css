@@ -1,20 +1,29 @@
-@font-face {
-  font-family: "TimmonsNY";
-  src: url("./assets/fonts/TIMMONSNY.eot");
-  /* IE9 Compat Modes */
-  src: url("./assets/fonts/TIMMONSNY.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/TIMMONSNY.woff2") format("woff2"), url("./assets/fonts/TIMMONSNY.woff") format("woff"), url("./assets/fonts/TIMMONSNY.ttf") format("truetype"), url("./assets/fonts/TIMMONSNY.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+body h2 {
+  margin-block-start: none;
+  margin-block-end: none; }
 
-header {
-  height: 100vh;
-  min-height: 100vh; }
-  header .name-title, header .function-title {
-    font-family: "TimmonsNY", sans-serif; }
+.full-viewport {
+  height: 100vh; }
 
-main {
-  height: 100vh;
-  min-height: 100vh; }
+header .name-title, header .progress-text {
+  font-family: "Heebo", "Open Sans", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase; }
 
-footer {
-  height: 100vh;
-  min-height: 100vh; }
+header .name-title {
+  font-size: 33vh;
+  margin: 0;
+  pointer-events: none;
+  z-index: 0; }
+
+header .progress-container {
+  width: 100%; }
+  header .progress-container .progress-text {
+    top: 27vh;
+    position: absolute;
+    z-index: -10;
+    color: #ffff;
+    font-size: 15vh;
+    text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+    text-align: center;
+    margin: 0; }
