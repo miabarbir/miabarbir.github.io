@@ -27,3 +27,8 @@ header .progress-container {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-align: center;
     margin: 0; }
+
+.navigation-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center; }
