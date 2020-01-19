@@ -52,9 +52,9 @@ header .progress-container {
 
 .navigation-bar {
   top: 0;
-  position: fixed;
   width: 100%;
-  border-bottom: 1px solid #ffff; }
+  border-bottom: 1px solid #ffff;
+  position: fixed; }
   .navigation-bar ul {
     list-style: none;
     list-style-position: none;
