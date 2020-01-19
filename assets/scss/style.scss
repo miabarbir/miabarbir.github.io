@@ -1,11 +1,21 @@
 $title-font: 'Heebo', 'Open Sans', sans-serif;
 $text-font: 'Heebo', 'Open Sans', sans-serif;
-
-$main-color: rgb(0, 0, 0);
+$nav-font: 'Roboto Condensed', sans-serif;
+// $main-color: rgb(0, 0, 0);
+// $contrast-color: #ffff;
 // $secondary-color: rgb(112, 192, 145);
-$secondary-color: blue;
-body {
+$secondary-color: #0000ff;
 
+$main-color: #ffff;
+$contrast-color: #000000;
+
+body {
+    // display: table;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: $contrast-color;
+    color: $main-color;
     h2 {
         margin-block-start: none;
         margin-block-end: none;
@@ -37,23 +47,73 @@ header {
             font-size: 15vh;
             text-shadow: -1px 0 $main-color, 0 1px $main-color, 1px 0 $main-color, 0 -1px $main-color;
             text-align: center;        
-            margin: 0;
-            
+            margin: 0; 
         }
-    }
-
-      
+    }     
 }
 .navigation-bar {
+    border-bottom: 1px solid $main-color;
     ul {
         list-style: none;
+        list-style-position: none;
+        font-family: $nav-font;
         display: flex;
-        align-items: center;
+        justify-content: space-around;
+        padding-inline-start: 0;
+        .navigation-link {
+            font-family: $title-font;
+            font-size: 1.2em;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        .my-name {
+            font-size: 1.3em;
+            font-weight: 700;
+            letter-spacing: normal;
+            color: $secondary-color;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            .strikethrough {
+                position: relative;
+                display: block;
+              }
+              .strikethrough:before, .strikethrough:after {
+                content: '';
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                top: 50%;
+                margin-top: -0.5px;
+                background: $secondary-color;
+              }
+              .strikethrough:before {
+                left: -2.5px;
+              }
+              .strikethrough:after {
+                right: 2.5px;
+                background: $secondary-color;
+                transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+              }
+              .strikethrough:hover:before {
+                background: $secondary-color;
+                width: 100%;
+                transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+              }
+              .strikethrough:hover:after {
+                background: transparent;
+                width: 100%;
+                transition: 0s;
+              }
+              
+        }
     }
 }
-// main {
-
-// }
-// footer {
-
-// }
+ main {
+     display: none;
+ }
+footer {
+    display: none;
+}
