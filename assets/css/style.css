@@ -1,15 +1,31 @@
+::-moz-selection {
+  /* Code for Firefox */
+  background: #0000ff; }
+
+::selection {
+  background: #0000ff; }
+
 body {
   width: 100%;
   height: 100vh;
   margin: 0;
   background-color: #000000;
+  font-family: "Heebo", "Open Sans", sans-serif;
   color: #ffff; }
   body h2 {
     margin-block-start: none;
     margin-block-end: none; }
+  body ul {
+    list-style: none;
+    list-style-position: none;
+    padding-inline-start: 0; }
+  body a {
+    color: #ffff;
+    text-decoration: none; }
 
 .full-viewport {
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 header .name-title, header .progress-text {
   font-family: "Heebo", "Open Sans", sans-serif;
@@ -35,6 +51,9 @@ header .progress-container {
     margin: 0; }
 
 .navigation-bar {
+  top: 0;
+  position: fixed;
+  width: 100%;
   border-bottom: 1px solid #ffff; }
   .navigation-bar ul {
     list-style: none;
@@ -53,7 +72,7 @@ header .progress-container {
       font-size: 1.3em;
       font-weight: 700;
       letter-spacing: normal;
-      color: #70c091; }
+      color: #0000ff; }
     .navigation-bar ul li {
       display: flex;
       align-items: center; }
@@ -67,15 +86,15 @@ header .progress-container {
         height: 1.5px;
         top: 50%;
         margin-top: -0.5px;
-        background: #70c091; }
+        background: #0000ff; }
       .navigation-bar ul li .strikethrough:before {
         left: -2.5px; }
       .navigation-bar ul li .strikethrough:after {
         right: 2.5px;
-        background: #70c091;
+        background: #0000ff;
         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
       .navigation-bar ul li .strikethrough:hover:before {
-        background: #70c091;
+        background: #0000ff;
         width: 100%;
         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
       .navigation-bar ul li .strikethrough:hover:after {
@@ -84,14 +103,71 @@ header .progress-container {
         transition: 0s; }
 
 main {
-  display: none; }
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #ffff;
+  color: #000000; }
+  main .background-section {
+    width: 100%;
+    position: relative; }
+  main .skills-section {
+    width: 100%;
+    position: relative; }
 
 footer {
-  display: none; }
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  footer .about-me {
+    display: flex;
+    align-items: center;
+    align-content: space-around; }
+    footer .about-me .my-name {
+      width: 50%;
+      font-size: 1em;
+      letter-spacing: normal;
+      border-right: 1px solid #ffff;
+      text-align: right;
+      padding-right: 15px; }
+    footer .about-me .contact-list {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      footer .about-me .contact-list li {
+        padding: 0 15px 0 15px; }
 
-::-moz-selection {
-  /* Code for Firefox */
-  background: #70c091; }
+.vertical-bar {
+  widows: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-::selection {
-  background: #70c091; }
+.vertical-bar::after {
+  bottom: 0;
+  position: absolute;
+  content: "";
+  border: 1px solid #0000ff;
+  height: 35px; }
+
+.made-with {
+  width: 100%;
+  bottom: 5px;
+  position: absolute;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #0000ff;
+  margin-left: 50%;
+  padding-left: 30px;
+  text-transform: initial; }

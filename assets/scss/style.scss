@@ -3,29 +3,45 @@ $text-font: 'Heebo', 'Open Sans', sans-serif;
 $nav-font: 'Roboto Condensed', sans-serif;
 // $main-color: rgb(0, 0, 0);
 // $contrast-color: #ffff;
-$secondary-color: rgb(112, 192, 145);
-// $secondary-color: #0000ff;
+// $secondary-color: rgb(112, 192, 145);
+$secondary-color: #0000ff;
 
 $main-color: #ffff;
 $contrast-color: #000000;
 
+::-moz-selection { /* Code for Firefox */
+    background: $secondary-color;
+} 
+::selection {
+    background: $secondary-color;
+}
 body {
     // display: table;
     width: 100%;
     height: 100vh;
     margin: 0;
     background-color: $contrast-color;
+    font-family: $text-font;
     color: $main-color;
     h2 {
         margin-block-start: none;
         margin-block-end: none;
     }
+    ul {
+        list-style: none;
+        list-style-position: none;
+        padding-inline-start: 0;
+    }
+    a {
+        color: $main-color;
+        text-decoration: none;
+    }
 }
  .full-viewport { 
     height: 100vh;
+    position: relative;
     // max-height: 100vh;
  }
-
 header {
     .name-title, .progress-text {
         font-family: $title-font;
@@ -53,7 +69,11 @@ header {
     }     
 }
 .navigation-bar {
+    top: 0;
+    position: fixed;
+    width: 100%;
     border-bottom: 1px solid $main-color;
+
     ul {
         list-style: none;
         list-style-position: none;
@@ -107,21 +127,83 @@ header {
                 background: transparent;
                 width: 100%;
                 transition: 0s;
-              }
-              
+              }    
         }
     }
 }
  main {
-     display: none;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: $main-color;
+    color: $contrast-color;
+    .background-section {
+        width: 100%;
+        position: relative;
+    }
+    .skills-section {
+        width: 100%;
+        position: relative;
+    }
  }
 footer {
-    display: none;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .about-me {
+        display: flex;
+        align-items: center;
+        align-content: space-around;
+        .my-name {
+            width: 50%;
+            font-size: 1em; 
+            letter-spacing: normal;
+            border-right: 1px solid $main-color;
+            text-align: right;
+            padding-right: 15px;
+        }
+        .contact-list {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            li {
+                padding: 0 15px 0 15px;
+            }
+        }
+    }
 }
-::-moz-selection { /* Code for Firefox */
-    background: $secondary-color;
+.vertical-bar {
+    widows: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
-::selection {
-    background: $secondary-color;
+.vertical-bar::after {
+    bottom: 0;
+    position: absolute;
+    content: "";
+    border: 1px solid $secondary-color;
+    height: 35px;
+}
+.made-with {
+    width: 100%;
+    bottom: 5px;
+    position: absolute;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: $secondary-color;
+    margin-left: 50%;
+    padding-left: 30px;
+    text-transform: initial;
 }
