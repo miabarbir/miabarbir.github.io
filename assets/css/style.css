@@ -6,9 +6,12 @@
   background: #0000ff; }
 
 body {
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto auto auto;
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #000000;
   font-family: "Heebo", "Open Sans", sans-serif;
   color: #ffff; }
@@ -73,13 +76,13 @@ header .progress-container {
       font-weight: 700;
       letter-spacing: normal;
       color: #0000ff; }
-    .navigation-bar ul li {
+    .navigation-bar ul .navigation-link {
       display: flex;
       align-items: center; }
-      .navigation-bar ul li .strikethrough {
+      .navigation-bar ul .navigation-link .strikethrough {
         position: relative;
         display: block; }
-      .navigation-bar ul li .strikethrough:before, .navigation-bar ul li .strikethrough:after {
+      .navigation-bar ul .navigation-link .strikethrough::before, .navigation-bar ul .navigation-link .strikethrough::after {
         content: '';
         position: absolute;
         width: 0%;
@@ -87,24 +90,24 @@ header .progress-container {
         top: 50%;
         margin-top: -0.5px;
         background: #0000ff; }
-      .navigation-bar ul li .strikethrough:before {
+      .navigation-bar ul .navigation-link .strikethrough::before {
         left: -2.5px; }
-      .navigation-bar ul li .strikethrough:after {
+      .navigation-bar ul .navigation-link .strikethrough::after {
         right: 2.5px;
         background: #0000ff;
         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
-      .navigation-bar ul li .strikethrough:hover:before {
+      .navigation-bar ul .navigation-link .strikethrough:hover::before {
         background: #0000ff;
         width: 100%;
         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
-      .navigation-bar ul li .strikethrough:hover:after {
+      .navigation-bar ul .navigation-link .strikethrough:hover::after {
         background: transparent;
         width: 100%;
         transition: 0s; }
 
 main {
   width: 100%;
-  height: 100vh;
+  height: auto;
   margin: 0;
   display: flex;
   flex-flow: column wrap;
