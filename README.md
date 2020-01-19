@@ -1,4 +1,6 @@
-# .me version 0.0.0.1
+# My dev landing page
 
-Work in progress...
+- Website under construction 
+
+Made by M.B
 

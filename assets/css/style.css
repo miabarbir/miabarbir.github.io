@@ -6,7 +6,8 @@
   background: #0000ff; }
 
 body {
-  width: 100%;
+  display: block;
+  width: 100vw;
   height: 100vh;
   margin: 0;
   background-color: #000000;
@@ -24,6 +25,7 @@ body {
     text-decoration: none; }
 
 .full-viewport {
+  width: 100vw !important;
   height: 100vh;
   position: relative; }
 
@@ -52,7 +54,7 @@ header .progress-container {
 
 .navigation-bar {
   top: 0;
-  width: 100%;
+  width: 100vw;
   border-bottom: 1px solid #ffff;
   position: fixed; }
   .navigation-bar ul {
@@ -149,7 +151,7 @@ footer {
         padding: 0 15px 0 15px; }
 
 .vertical-bar {
-  widows: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -163,7 +165,7 @@ footer {
   height: 35px; }
 
 .made-with {
-  width: 100%;
+  width: 100vw;
   bottom: 5px;
   position: absolute;
   margin-block-start: 0;
