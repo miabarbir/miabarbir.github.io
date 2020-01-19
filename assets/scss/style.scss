@@ -19,6 +19,7 @@ body {
     display: block;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     margin: 0;
     background-color: $contrast-color;
     font-family: $text-font;
