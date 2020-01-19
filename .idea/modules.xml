@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../2. HTML:CSS/learning-html-css/404-Page/.idea/404-Page.iml" filepath="$PROJECT_DIR$/../../2. HTML:CSS/learning-html-css/404-Page/.idea/404-Page.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/miabarbir.github.io.iml" filepath="$PROJECT_DIR$/.idea/miabarbir.github.io.iml" />
     </modules>
   </component>

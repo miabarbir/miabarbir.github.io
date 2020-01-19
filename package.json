@@ -1,0 +1,25 @@
+{
+  "name": "miabarbir.github.io",
+  "version": "1.0.0",
+  "description": "Work in progress...",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miabarbir/miabarbir.github.io.git"
+  },
+  "keywords": [],
+  "author": "Mia Barbir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miabarbir/miabarbir.github.io/issues"
+  },
+  "homepage": "https://github.com/miabarbir/miabarbir.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0",
+    "normalize": "^0.3.1",
+    "normalize.css": "^8.0.1"
+  }
+}
