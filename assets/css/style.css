@@ -251,7 +251,7 @@ section {
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-@media (min-width: 320px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px) {
   html {
     width: 100vw;
     height: 100vh;
