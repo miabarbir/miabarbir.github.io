@@ -245,7 +245,6 @@ section {
 /* media queries */ 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
     .full-viewport {
         display: block;
         overflow: hidden;
@@ -267,7 +266,6 @@ section {
   */
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
     .full-viewport {
         display: block;
         overflow: hidden;
@@ -290,9 +288,33 @@ section {
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
-    
-    //CSS
-    
+    html {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    section {
+        .about-me {
+            display: flex;
+            flex-flow: column wrap;
+            .my-name {
+                width: auto;
+                color: $main-color;
+                border-right: none;
+                text-align: center;
+                padding: 0 10px 10px 10px;
+                border-bottom: 1px solid $secondary-color;
+            }
+            .contact-list {
+                width: auto;
+                display: flex;
+                flex-flow: column wrap;
+                li {
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
   }
   
   /* 
@@ -300,8 +322,40 @@ section {
     ##Screen = B/w 320px to 479px
   */
   
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    //CSS
-    
+  @media (min-width: 320px) and (max-width: 500px) { 
+    html {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    section {
+        .about-me {
+            display: flex;
+            flex-flow: column wrap;
+            .my-name {
+                width: auto;
+                color: $main-color;
+                border-right: none;
+                text-align: center;
+                padding: 0 10px 10px 10px;
+                border-bottom: 1px solid $secondary-color;
+            }
+            .contact-list {
+                width: auto;
+                display: flex;
+                flex-flow: column wrap;
+                li {
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+    .vertical-bar::after {
+        display: none;
+    }
+    .made-with {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
   }

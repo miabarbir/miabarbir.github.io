@@ -225,7 +225,56 @@ section {
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
   */
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+  section .about-me {
+    display: flex;
+    flex-flow: column wrap; }
+    section .about-me .my-name {
+      width: auto;
+      color: #ffff;
+      border-right: none;
+      text-align: center;
+      padding: 0 10px 10px 10px;
+      border-bottom: 1px solid #70c091; }
+    section .about-me .contact-list {
+      width: auto;
+      display: flex;
+      flex-flow: column wrap; }
+      section .about-me .contact-list li {
+        margin: 15px 0; } }
+
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
+@media (min-width: 320px) and (max-width: 500px) {
+  html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; }
+  section .about-me {
+    display: flex;
+    flex-flow: column wrap; }
+    section .about-me .my-name {
+      width: auto;
+      color: #ffff;
+      border-right: none;
+      text-align: center;
+      padding: 0 10px 10px 10px;
+      border-bottom: 1px solid #70c091; }
+    section .about-me .contact-list {
+      width: auto;
+      display: flex;
+      flex-flow: column wrap; }
+      section .about-me .contact-list li {
+        margin: 15px 0; }
+  .vertical-bar::after {
+    display: none; }
+  .made-with {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center; } }
