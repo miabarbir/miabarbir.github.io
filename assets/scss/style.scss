@@ -107,8 +107,8 @@ header {
                 position: absolute;
                 width: 0%;
                 height: 1.5px;
-                top: 50%;
                 margin-top: -0.5px;
+                top: 50%;
                 background: $secondary-color;
               }
               .strikethrough:before {
@@ -190,8 +190,8 @@ section {
                 content: '';
                 position: absolute;
                 width: 0%;
-                height: 3px;
-                top: 50%;
+                height: 2px;
+                top: 45%;
                 margin-top: -0.5px;
                 background: $secondary-color;
               }
@@ -241,3 +241,67 @@ section {
     padding-left: 30px;
     text-transform: initial;
 }
+
+/* media queries */ 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .full-viewport {
+        display: block;
+        overflow: hidden;
+    }
+    section {
+        .about-me {
+            .contact-list {
+                li {
+                    padding: 0 10px 0 10px;
+                }
+            }
+        }
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .full-viewport {
+        display: block;
+        overflow: hidden;
+    }
+    section {
+        .about-me {
+            .contact-list {
+                li {
+                    padding: 0 10px 0 10px;
+                }
+            }
+        }
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    //CSS
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    //CSS
+    
+  }

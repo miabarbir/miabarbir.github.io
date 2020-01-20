@@ -87,8 +87,8 @@ header .progress-container {
         position: absolute;
         width: 0%;
         height: 1.5px;
-        top: 50%;
         margin-top: -0.5px;
+        top: 50%;
         background: #70c091; }
       .navigation-bar ul li .strikethrough:before {
         left: -2.5px; }
@@ -158,8 +158,8 @@ section {
         content: '';
         position: absolute;
         width: 0%;
-        height: 3px;
-        top: 50%;
+        height: 2px;
+        top: 45%;
         margin-top: -0.5px;
         background: #70c091; }
       section .about-me .contact-list .strikethrough:before {
@@ -201,3 +201,31 @@ section {
   margin-left: 50%;
   padding-left: 30px;
   text-transform: initial; }
+
+/* media queries */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .full-viewport {
+    display: block;
+    overflow: hidden; }
+  section .about-me .contact-list li {
+    padding: 0 10px 0 10px; } }
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .full-viewport {
+    display: block;
+    overflow: hidden; }
+  section .about-me .contact-list li {
+    padding: 0 10px 0 10px; } }
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
