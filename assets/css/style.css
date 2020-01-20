@@ -199,6 +199,7 @@ section {
   margin-block-end: 0;
   color: #70c091;
   margin-left: 50%;
+  -moz-margin-start: 100%;
   padding-left: 30px;
   text-transform: initial; }
 
