@@ -1,9 +1,9 @@
 ::-moz-selection {
   /* Code for Firefox */
-  background: #0000ff; }
+  background: #70c091; }
 
 ::selection {
-  background: #0000ff; }
+  background: #70c091; }
 
 body {
   display: block;
@@ -75,7 +75,7 @@ header .progress-container {
       font-size: 1.3em;
       font-weight: 700;
       letter-spacing: normal;
-      color: #0000ff; }
+      color: #70c091; }
     .navigation-bar ul li {
       display: flex;
       align-items: center; }
@@ -89,15 +89,15 @@ header .progress-container {
         height: 1.5px;
         top: 50%;
         margin-top: -0.5px;
-        background: #0000ff; }
+        background: #70c091; }
       .navigation-bar ul li .strikethrough:before {
         left: -2.5px; }
       .navigation-bar ul li .strikethrough:after {
         right: 2.5px;
-        background: #0000ff;
+        background: #70c091;
         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
       .navigation-bar ul li .strikethrough:hover:before {
-        background: #0000ff;
+        background: #70c091;
         width: 100%;
         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
       .navigation-bar ul li .strikethrough:hover:after {
@@ -143,7 +143,7 @@ section {
       border-right: 1px solid #ffff;
       text-align: right;
       padding-right: 15px;
-      color: #0000ff; }
+      color: #70c091; }
     section .about-me .contact-list {
       width: 50%;
       display: flex;
@@ -161,15 +161,15 @@ section {
         height: 3px;
         top: 50%;
         margin-top: -0.5px;
-        background: #0000ff; }
+        background: #70c091; }
       section .about-me .contact-list .strikethrough:before {
         left: -2.5px; }
       section .about-me .contact-list .strikethrough:after {
         right: 2.5px;
-        background: #0000ff;
+        background: #70c091;
         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
       section .about-me .contact-list .strikethrough:hover:before {
-        background: #0000ff;
+        background: #70c091;
         width: 100%;
         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
       section .about-me .contact-list .strikethrough:hover:after {
@@ -188,7 +188,7 @@ section {
   bottom: 0;
   position: absolute;
   content: "";
-  border: 1px solid #0000ff;
+  border: 1px solid #70c091;
   height: 35px; }
 
 .made-with {
@@ -197,7 +197,7 @@ section {
   position: absolute;
   margin-block-start: 0;
   margin-block-end: 0;
-  color: #0000ff;
+  color: #70c091;
   margin-left: 50%;
   padding-left: 30px;
   text-transform: initial; }
