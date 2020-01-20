@@ -15,17 +15,11 @@ $contrast-color: #000000;
 ::selection {
     background: $secondary-color;
 }
-html {
-    scroll-behavior: smooth;
-}
 body {
-    width: 100vw;
-    height: auto;
-    display: grid;
-    grid-template-rows: auto auto auto;
+    // display: table;
+    width: 100%;
+    height: 100vh;
     margin: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
     background-color: $contrast-color;
     font-family: $text-font;
     color: $main-color;
@@ -46,13 +40,7 @@ body {
  .full-viewport { 
     height: 100vh;
     position: relative;
- }
- .scroller {
-     overflow-y: scroll;
-     scroll-snap-type: y mandatory;
- }
- .scroller section {
-     scroll-snap-align: start;
+    // max-height: 100vh;
  }
 header {
     .name-title, .progress-text {
@@ -81,11 +69,10 @@ header {
     }     
 }
 .navigation-bar {
-    position: relative;
     top: 0;
     width: 100%;
-    overflow: hidden;
     border-bottom: 1px solid $main-color;
+    position: fixed;
     ul {
         list-style: none;
         list-style-position: none;
@@ -106,14 +93,14 @@ header {
             letter-spacing: normal;
             color: $secondary-color;
         }
-        .navigation-link {
+        li {
             display: flex;
             align-items: center;
             .strikethrough {
                 position: relative;
                 display: block;
               }
-              .strikethrough::before, .strikethrough::after {
+              .strikethrough:before, .strikethrough:after {
                 content: '';
                 position: absolute;
                 width: 0%;
@@ -122,20 +109,20 @@ header {
                 margin-top: -0.5px;
                 background: $secondary-color;
               }
-              .strikethrough::before {
+              .strikethrough:before {
                 left: -2.5px;
               }
-              .strikethrough::after {
+              .strikethrough:after {
                 right: 2.5px;
                 background: $secondary-color;
                 transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
               }
-              .strikethrough:hover::before {
+              .strikethrough:hover:before {
                 background: $secondary-color;
                 width: 100%;
                 transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
               }
-              .strikethrough:hover::after {
+              .strikethrough:hover:after {
                 background: transparent;
                 width: 100%;
                 transition: 0s;
@@ -145,18 +132,17 @@ header {
 }
  main {
     width: 100%;
-    height: auto;
+    height: 100vh;
     margin: 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    position: relative;
     background-color: $main-color;
     color: $contrast-color;
-    position: relative;
     .background-section {
         width: 100%;
-        height: 100vh;
         position: relative;
     }
     .skills-section {
@@ -196,7 +182,7 @@ footer {
     }
 }
 .vertical-bar {
-    width: 100vw;
+    widows: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -209,15 +195,8 @@ footer {
     border: 1px solid $secondary-color;
     height: 35px;
 }
-// .vertical-bar-up::before {
-//     position: absolute;
-//     content: "";
-//     border: 1px solid $secondary-color;
-//     height: 35px;
-//     top: 0;
-// }
 .made-with {
-    width: 100vw;
+    width: 100%;
     bottom: 5px;
     position: absolute;
     margin-block-start: 0;
