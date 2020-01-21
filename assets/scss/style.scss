@@ -312,6 +312,18 @@ section {
                 flex-flow: column wrap;
                 li {
                     margin: 15px 0;
+                    .strikethrough:before {
+                        display: none;
+                    }
+                    .strikethrough:after {
+                        display: none;
+                    }
+                    .strikethrough:hover:before {
+                        display: none;
+                    }
+                    .strikethrough:hover:after {
+                        display: none;
+                    }
                 }
             }
         }
@@ -347,6 +359,18 @@ section {
                 flex-flow: column wrap;
                 li {
                     margin: 15px 0;
+                    .strikethrough:before {
+                        display: none;
+                    }
+                    .strikethrough:after {
+                        display: none;
+                    }
+                    .strikethrough:hover:before {
+                        display: none;
+                    }
+                    .strikethrough:hover:after {
+                        display: none;
+                    }
                 }
             }
         }

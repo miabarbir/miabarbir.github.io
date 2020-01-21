@@ -246,7 +246,15 @@ section {
       display: flex;
       flex-flow: column wrap; }
       section .about-me .contact-list li {
-        margin: 15px 0; } }
+        margin: 15px 0; }
+        section .about-me .contact-list li .strikethrough:before {
+          display: none; }
+        section .about-me .contact-list li .strikethrough:after {
+          display: none; }
+        section .about-me .contact-list li .strikethrough:hover:before {
+          display: none; }
+        section .about-me .contact-list li .strikethrough:hover:after {
+          display: none; } }
 
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -273,6 +281,14 @@ section {
       flex-flow: column wrap; }
       section .about-me .contact-list li {
         margin: 15px 0; }
+        section .about-me .contact-list li .strikethrough:before {
+          display: none; }
+        section .about-me .contact-list li .strikethrough:after {
+          display: none; }
+        section .about-me .contact-list li .strikethrough:hover:before {
+          display: none; }
+        section .about-me .contact-list li .strikethrough:hover:after {
+          display: none; }
   .vertical-bar::after {
     display: none; }
   .made-with {
